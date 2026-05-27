@@ -1,17 +1,42 @@
 <view class="page">
   <view class="hero">
-    <view>
+    <view class="hero-copy">
       <text class="hero-kicker">Reservation</text>
       <view class="hero-title">预约场地</view>
       <view class="hero-subtitle">选择场地、时间，提交预约申请。</view>
     </view>
+    <view class="hero-panel">
+      <view class="hero-number">18</view>
+      <view class="hero-label">今日可约</view>
+    </view>
   </view>
 
-  <view class="section-title">可预约场地</view>
+  <view class="quick-row">
+    <view class="quick-card">
+      <view class="quick-value">3</view>
+      <view class="quick-label">开放场地</view>
+    </view>
+    <view class="quick-card">
+      <view class="quick-value">8:00</view>
+      <view class="quick-label">最早开放</view>
+    </view>
+    <view class="quick-card">
+      <view class="quick-value">22:00</view>
+      <view class="quick-label">最晚关闭</view>
+    </view>
+  </view>
+
+  <view class="section-head">
+    <view class="section-title">可预约场地</view>
+    <view class="section-note">实时更新</view>
+  </view>
 
   <view class="venue-list">
     <view class="venue-card card" wx:for="{{venues}}" wx:key="id" bindtap="goVenue" data-id="{{item.id}}">
-      <image class="venue-image" src="{{item.image}}" mode="aspectFill"></image>
+      <view class="image-wrap">
+        <image class="venue-image" src="{{item.image}}" mode="aspectFill"></image>
+        <view class="image-badge">{{item.available}}</view>
+      </view>
       <view class="venue-content">
         <view class="venue-top">
           <view class="venue-name">{{item.name}}</view>
@@ -19,6 +44,7 @@
         </view>
         <view class="venue-line muted">{{item.location}}</view>
         <view class="venue-meta">
+          <text>★ {{item.rating}}</text>
           <text>{{item.openTime}}</text>
           <text>￥{{item.price}}/小时</text>
         </view>

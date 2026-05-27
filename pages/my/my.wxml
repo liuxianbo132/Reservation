@@ -16,6 +16,9 @@
       <view class="booking-line">{{item.date}} · {{item.slot}}</view>
       <view class="muted">联系人：{{item.contactName}} · {{item.phone}}</view>
       <view class="muted" wx:if="{{item.remark}}">备注：{{item.remark}}</view>
+      <view class="actions">
+        <button class="mini danger" size="mini" data-id="{{item.id}}" bindtap="deleteBooking">删除预约</button>
+      </view>
     </view>
   </view>
 </view>

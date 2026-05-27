@@ -8,13 +8,13 @@
   ],
   "window": {
     "navigationBarTitleText": "场地预约",
-    "navigationBarBackgroundColor": "#1F6F78",
+    "navigationBarBackgroundColor": "#C2185B",
     "navigationBarTextStyle": "white",
-    "backgroundColor": "#F5F7F8"
+    "backgroundColor": "#FFF0F6"
   },
   "tabBar": {
     "color": "#667085",
-    "selectedColor": "#1F6F78",
+    "selectedColor": "#C2185B",
     "backgroundColor": "#FFFFFF",
     "borderStyle": "black",
     "list": [

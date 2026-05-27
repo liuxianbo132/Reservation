@@ -1,5 +1,5 @@
 page {
-  background: #f5f7f8;
+  background: #fff0f6;
   color: #182230;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 28rpx;
@@ -31,7 +31,7 @@ page {
 .primary-button {
   margin-top: 24rpx;
   border-radius: 12rpx;
-  background: #1f6f78;
+  background: #c2185b;
   color: #ffffff;
   font-weight: 700;
 }
@@ -39,8 +39,8 @@ page {
 .ghost-button {
   margin-top: 18rpx;
   border-radius: 12rpx;
-  color: #1f6f78;
-  background: #e7f5f6;
+  color: #c2185b;
+  background: #ffe4ef;
   font-weight: 700;
 }
 
@@ -50,7 +50,7 @@ page {
   line-height: 44rpx;
   padding: 0 16rpx;
   border-radius: 999rpx;
-  background: #e7f5f6;
-  color: #1f6f78;
+  background: #ffe4ef;
+  color: #c2185b;
   font-size: 24rpx;
 }

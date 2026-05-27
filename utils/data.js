@@ -7,6 +7,8 @@ const venues = [
     price: 80,
     openTime: "09:00-21:00",
     capacity: "半场/全场",
+    rating: "4.9",
+    available: "今日 6 个时段",
     image: "/assets/venues/basketball.png",
     description: "适合日常训练、朋友组局和小型比赛，夜间灯光开放。"
   },
@@ -18,6 +20,8 @@ const venues = [
     price: 45,
     openTime: "08:00-22:00",
     capacity: "单片场地",
+    rating: "4.8",
+    available: "今日 8 个时段",
     image: "/assets/venues/badminton.png",
     description: "木地板场地，配备休息区，适合单打和双打预约。"
   },
@@ -29,6 +33,8 @@ const venues = [
     price: 120,
     openTime: "09:00-18:00",
     capacity: "20 人",
+    rating: "4.7",
+    available: "今日 4 个时段",
     image: "/assets/venues/meeting.png",
     description: "配备投影、白板和无线网络，适合社团会议和小型培训。"
   }

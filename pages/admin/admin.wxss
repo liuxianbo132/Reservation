@@ -38,22 +38,29 @@
 
 .actions {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 8rpx;
 }
 
 .mini {
-  flex: 1;
   margin: 0;
+  margin-bottom: 12rpx;
   border-radius: 10rpx;
 }
 
 .confirm {
   margin-right: 16rpx;
-  background: #1f6f78;
+  background: #c2185b;
   color: #ffffff;
 }
 
 .cancel {
+  margin-right: 16rpx;
   background: #fef3f2;
   color: #b42318;
+}
+
+.danger {
+  background: #fff7ed;
+  color: #c2410c;
 }

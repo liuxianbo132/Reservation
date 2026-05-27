@@ -6,6 +6,11 @@
       <view class="venue-name">{{venue.name}}</view>
       <text class="tag">{{venue.type}}</text>
     </view>
+    <view class="summary-row">
+      <text>★ {{venue.rating}}</text>
+      <text>{{venue.available}}</text>
+      <text>￥{{venue.price}}/小时</text>
+    </view>
     <view class="muted info">{{venue.description}}</view>
 
     <view class="info-grid">

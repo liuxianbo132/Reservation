@@ -61,7 +61,7 @@
 }
 
 .slot-active {
-  border-color: #1f6f78;
-  background: #e7f5f6;
-  color: #1f6f78;
+  border-color: #c2185b;
+  background: #ffe4ef;
+  color: #c2185b;
 }

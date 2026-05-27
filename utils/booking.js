@@ -33,8 +33,15 @@ function updateBookingStatus(id, status) {
   return bookings
 }
 
+function deleteBooking(id) {
+  const bookings = getBookings().filter((item) => item.id !== id)
+  saveBookings(bookings)
+  return bookings
+}
+
 module.exports = {
   getBookings,
   createBooking,
-  updateBookingStatus
+  updateBookingStatus,
+  deleteBooking
 }

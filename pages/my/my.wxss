@@ -36,6 +36,22 @@
 
 .booking-line {
   margin-bottom: 12rpx;
-  color: #1f6f78;
+  color: #c2185b;
   font-weight: 700;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 18rpx;
+}
+
+.mini {
+  margin: 0;
+  border-radius: 10rpx;
+}
+
+.danger {
+  background: #fef3f2;
+  color: #b42318;
 }

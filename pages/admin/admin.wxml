@@ -20,6 +20,7 @@
       <view class="actions">
         <button class="mini confirm" size="mini" data-id="{{item.id}}" bindtap="confirmBooking">确认</button>
         <button class="mini cancel" size="mini" data-id="{{item.id}}" bindtap="cancelBooking">取消</button>
+        <button class="mini danger" size="mini" data-id="{{item.id}}" bindtap="deleteBooking">删除</button>
       </view>
     </view>
   </view>

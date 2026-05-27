@@ -1,4 +1,8 @@
-const { getBookings, updateBookingStatus } = require("../../utils/booking")
+const {
+  getBookings,
+  updateBookingStatus,
+  deleteBooking: removeBooking
+} = require("../../utils/booking")
 
 Page({
   data: {
@@ -30,5 +34,21 @@ Page({
     updateBookingStatus(event.currentTarget.dataset.id, "已取消")
     this.refresh()
     wx.showToast({ title: "已取消", icon: "none" })
+  },
+
+  deleteBooking(event) {
+    const { id } = event.currentTarget.dataset
+    wx.showModal({
+      title: "删除预约",
+      content: "删除后本地记录不可恢复，确定删除吗？",
+      confirmText: "删除",
+      confirmColor: "#B42318",
+      success: (res) => {
+        if (!res.confirm) return
+        removeBooking(id)
+        this.refresh()
+        wx.showToast({ title: "已删除", icon: "success" })
+      }
+    })
   }
 })
