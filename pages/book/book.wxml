@@ -1,0 +1,49 @@
+<view class="page" wx:if="{{venue}}">
+  <view class="card">
+    <view class="venue-name">{{venue.name}}</view>
+    <view class="muted">{{venue.location}} · ￥{{venue.price}}/小时</view>
+  </view>
+
+  <view class="section-title">预约信息</view>
+
+  <view class="card form-card">
+    <view class="field">
+      <view class="label">预约日期</view>
+      <picker mode="date" value="{{date}}" start="{{today}}" bindchange="onDateChange">
+        <view class="picker-value">{{date}}</view>
+      </picker>
+    </view>
+
+    <view class="field">
+      <view class="label">时间段</view>
+      <view class="slot-grid">
+        <view
+          class="slot {{item === selectedSlot ? 'slot-active' : ''}}"
+          wx:for="{{timeSlots}}"
+          wx:key="*this"
+          data-slot="{{item}}"
+          bindtap="chooseSlot"
+        >
+          {{item}}
+        </view>
+      </view>
+    </view>
+
+    <view class="field">
+      <view class="label">联系人</view>
+      <input class="input" placeholder="请输入姓名" value="{{contactName}}" bindinput="onNameInput" />
+    </view>
+
+    <view class="field">
+      <view class="label">手机号</view>
+      <input class="input" type="number" maxlength="11" placeholder="请输入手机号" value="{{phone}}" bindinput="onPhoneInput" />
+    </view>
+
+    <view class="field">
+      <view class="label">备注</view>
+      <textarea class="textarea" placeholder="选填，例如人数或特殊需求" value="{{remark}}" bindinput="onRemarkInput"></textarea>
+    </view>
+
+    <button class="primary-button" bindtap="submitBooking">提交预约</button>
+  </view>
+</view>

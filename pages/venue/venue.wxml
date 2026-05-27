@@ -1,0 +1,32 @@
+<view class="page" wx:if="{{venue}}">
+  <image class="cover" src="{{venue.image}}" mode="aspectFill"></image>
+
+  <view class="card detail-card">
+    <view class="title-row">
+      <view class="venue-name">{{venue.name}}</view>
+      <text class="tag">{{venue.type}}</text>
+    </view>
+    <view class="muted info">{{venue.description}}</view>
+
+    <view class="info-grid">
+      <view>
+        <view class="label">位置</view>
+        <view>{{venue.location}}</view>
+      </view>
+      <view>
+        <view class="label">开放时间</view>
+        <view>{{venue.openTime}}</view>
+      </view>
+      <view>
+        <view class="label">规格</view>
+        <view>{{venue.capacity}}</view>
+      </view>
+      <view>
+        <view class="label">价格</view>
+        <view>￥{{venue.price}}/小时</view>
+      </view>
+    </view>
+
+    <button class="primary-button" bindtap="goBook">立即预约</button>
+  </view>
+</view>

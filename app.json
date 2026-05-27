@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/venue/venue",
+    "pages/book/book",
+    "pages/my/my",
+    "pages/admin/admin"
+  ],
+  "window": {
+    "navigationBarTitleText": "场地预约",
+    "navigationBarBackgroundColor": "#1F6F78",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#F5F7F8"
+  },
+  "tabBar": {
+    "color": "#667085",
+    "selectedColor": "#1F6F78",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "场地"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的预约"
+      },
+      {
+        "pagePath": "pages/admin/admin",
+        "text": "管理"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

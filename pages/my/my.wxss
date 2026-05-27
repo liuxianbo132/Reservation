@@ -1,0 +1,46 @@
+.empty {
+  text-align: center;
+}
+
+.empty-title {
+  margin-bottom: 12rpx;
+  font-size: 34rpx;
+  font-weight: 800;
+}
+
+.booking-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18rpx;
+}
+
+.booking-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12rpx;
+}
+
+.booking-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18rpx;
+}
+
+.booking-title {
+  font-size: 32rpx;
+  font-weight: 800;
+}
+
+.status {
+  padding: 8rpx 16rpx;
+  border-radius: 999rpx;
+  background: #fff4df;
+  color: #b54708;
+  font-size: 24rpx;
+}
+
+.booking-line {
+  color: #1f6f78;
+  font-weight: 700;
+}

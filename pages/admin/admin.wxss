@@ -1,0 +1,65 @@
+.empty {
+  text-align: center;
+}
+
+.empty-title {
+  margin-bottom: 12rpx;
+  font-size: 34rpx;
+  font-weight: 800;
+}
+
+.booking-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18rpx;
+}
+
+.booking-card {
+  display: flex;
+  flex-direction: column;
+  gap: 14rpx;
+}
+
+.booking-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18rpx;
+}
+
+.booking-title {
+  margin-bottom: 8rpx;
+  font-size: 32rpx;
+  font-weight: 800;
+}
+
+.status {
+  flex: 0 0 auto;
+  padding: 8rpx 16rpx;
+  border-radius: 999rpx;
+  background: #fff4df;
+  color: #b54708;
+  font-size: 24rpx;
+}
+
+.actions {
+  display: flex;
+  gap: 16rpx;
+  margin-top: 8rpx;
+}
+
+.mini {
+  flex: 1;
+  margin: 0;
+  border-radius: 10rpx;
+}
+
+.confirm {
+  background: #1f6f78;
+  color: #ffffff;
+}
+
+.cancel {
+  background: #fef3f2;
+  color: #b42318;
+}
