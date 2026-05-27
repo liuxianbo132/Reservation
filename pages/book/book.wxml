@@ -18,7 +18,7 @@
       <view class="label">时间段</view>
       <view class="slot-grid">
         <view
-          class="slot {{item === selectedSlot ? 'slot-active' : ''}}"
+          class="slot {{item == selectedSlot ? 'slot-active' : ''}}"
           wx:for="{{timeSlots}}"
           wx:key="*this"
           data-slot="{{item}}"

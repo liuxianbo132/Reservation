@@ -26,14 +26,9 @@
   opacity: 0.9;
 }
 
-.venue-list {
-  display: flex;
-  flex-direction: column;
-  gap: 22rpx;
-}
-
 .venue-card {
   padding: 0;
+  margin-bottom: 22rpx;
   overflow: hidden;
 }
 
@@ -52,7 +47,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 18rpx;
 }
 
 .venue-name {

@@ -1,13 +1,13 @@
 <view class="page">
   <view class="section-title">我的预约</view>
 
-  <view class="empty card" wx:if="{{bookings.length === 0}}">
+  <view class="empty card" wx:if="{{isEmpty}}">
     <view class="empty-title">还没有预约</view>
     <view class="muted">去选择一个场地，提交你的第一条预约。</view>
     <button class="primary-button" bindtap="goHome">去预约</button>
   </view>
 
-  <view class="booking-list" wx:else>
+  <view class="booking-list" wx:if="{{hasBookings}}">
     <view class="card booking-card" wx:for="{{bookings}}" wx:key="id">
       <view class="booking-top">
         <view class="booking-title">{{item.venueName}}</view>

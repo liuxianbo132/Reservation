@@ -7,7 +7,7 @@ const venues = [
     price: 80,
     openTime: "09:00-21:00",
     capacity: "半场/全场",
-    image: "https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=900&q=80",
+    image: "/assets/venues/basketball.png",
     description: "适合日常训练、朋友组局和小型比赛，夜间灯光开放。"
   },
   {
@@ -18,7 +18,7 @@ const venues = [
     price: 45,
     openTime: "08:00-22:00",
     capacity: "单片场地",
-    image: "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?auto=format&fit=crop&w=900&q=80",
+    image: "/assets/venues/badminton.png",
     description: "木地板场地，配备休息区，适合单打和双打预约。"
   },
   {
@@ -29,7 +29,7 @@ const venues = [
     price: 120,
     openTime: "09:00-18:00",
     capacity: "20 人",
-    image: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80",
+    image: "/assets/venues/meeting.png",
     description: "配备投影、白板和无线网络，适合社团会议和小型培训。"
   }
 ]

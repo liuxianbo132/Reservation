@@ -8,23 +8,17 @@
   font-weight: 800;
 }
 
-.booking-list {
-  display: flex;
-  flex-direction: column;
-  gap: 18rpx;
-}
-
 .booking-card {
   display: flex;
   flex-direction: column;
-  gap: 14rpx;
+  margin-bottom: 18rpx;
 }
 
 .booking-top {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 18rpx;
+  margin-bottom: 14rpx;
 }
 
 .booking-title {
@@ -44,7 +38,6 @@
 
 .actions {
   display: flex;
-  gap: 16rpx;
   margin-top: 8rpx;
 }
 
@@ -55,6 +48,7 @@
 }
 
 .confirm {
+  margin-right: 16rpx;
   background: #1f6f78;
   color: #ffffff;
 }

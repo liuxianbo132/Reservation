@@ -13,7 +13,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 18rpx;
 }
 
 .venue-name {
@@ -27,10 +26,15 @@
 }
 
 .info-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24rpx;
+  display: flex;
+  flex-wrap: wrap;
   margin-top: 30rpx;
+}
+
+.info-grid > view {
+  width: 50%;
+  margin-bottom: 24rpx;
+  box-sizing: border-box;
 }
 
 .label {

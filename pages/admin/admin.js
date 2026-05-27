@@ -2,7 +2,9 @@ const { getBookings, updateBookingStatus } = require("../../utils/booking")
 
 Page({
   data: {
-    bookings: []
+    bookings: [],
+    isEmpty: true,
+    hasBookings: false
   },
 
   onShow() {
@@ -10,8 +12,11 @@ Page({
   },
 
   refresh() {
+    const bookings = getBookings()
     this.setData({
-      bookings: getBookings()
+      bookings,
+      isEmpty: bookings.length === 0,
+      hasBookings: bookings.length > 0
     })
   },
 
